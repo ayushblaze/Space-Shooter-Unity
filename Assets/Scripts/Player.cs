@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             // transform.Translate(Vector3.right * horizontalInput * _speed * Time.deltaTime);
             // transform.Translate(Vector3.up * verticalInput * _speed * Time.deltaTime);
         } else {
-            transform.Translate(direction * _speed * _speedMultiplier * Time.deltaTime);
+            transform.Translate(direction * (_speed * _speedMultiplier) * Time.deltaTime);
         }
 
         transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.4f, 0), 0);
